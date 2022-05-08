@@ -1,0 +1,17 @@
+İlk olarak dizimiz;
+[2,22,27,16,18,6]
+İlk aşamamız dizinin en küçük elemanının bulunması ki bu durum için 2 olması gerek. 
+Insertion sort için Big o'muz O(n^2) olmalı. 
+1'den n'e kadar olan sayıların toplamına baktığımızda n^2 ve n görüyoruz ama Big o için en yüksek dereceli elemanı yazdığımız için O(n^2) oluyor.
+
+[2,6,16,18,22,27]
+Dizimizi sıraladığımızda görüldüğü üzere ortanca bir değerimiz yok. Bu yüzden 16 ve 18'i average case, 22 ve 27'i worst case gibi düşünebiliriz. 
+
+[7,3,5,8,2,9,4,15,6]
+İlk adım en küçük sayıyı bulmak olucak bu bizim 2.
+[2,7,3,5,8,9,4,15,6]
+Daha sonra artık 2'nin en küçük sayımız olduğunu bildiğimiz için 2'nin sağında kalan sayılara bakıp onların en küçüğünü 2'nin yanına yazıcam. 
+[2,3,7,5,8,9,4,15,6]
+Böyle devam edilince adımlar böyle görünücek. 
+[2,3,4,7,5,8,9,15,6]
+[2,3,4,5,7,8,9,15,6]
