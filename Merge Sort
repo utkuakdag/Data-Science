@@ -1,0 +1,11 @@
+[16,21,11,8,12,22]
+İlk aşama;
+[16,21,11] ve [8,12,22] olarak bölünmesi, 
+[16] [21,11] [8,12] [22]
+[16] [21] [11] [8] [12] [22] şimdi ise mergelemeye başlayabiliriz. 
+En sol ve en sağdakileri en son merge'lücek şekilde 21,11 ve 8,12'i mergeleyelim.
+[16] [11,21] [8,12] [22] 
+[11,16,21] [8,12,22] son basamakta iki serinin en küçük sayılarını karşılaştırarak başlıyacağız. 
+8 11'den küçük ilk iki terimimiz [8,11] olucak daha sonra [12,16] ve [21,22] sonuç olarak 
+[8,11,12,16,21,22] 
+Merge sort için Big o O(nlogn)
